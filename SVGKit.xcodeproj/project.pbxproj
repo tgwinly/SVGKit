@@ -44,7 +44,6 @@
 		310B9165221D596E00DF5993 /* NSCharacterSet+SVGKExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 310B906D221D596D00DF5993 /* NSCharacterSet+SVGKExtensions.h */; };
 		310B9166221D596E00DF5993 /* NSData+NSInputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 310B906E221D596D00DF5993 /* NSData+NSInputStream.h */; };
 		310B9167221D596E00DF5993 /* NSData+NSInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 310B906F221D596D00DF5993 /* NSData+NSInputStream.m */; };
-		310B9168221D596E00DF5993 /* NSCharacterSet+SVGKExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 310B9070221D596D00DF5993 /* NSCharacterSet+SVGKExtensions.m */; };
 		310B9169221D596E00DF5993 /* SVGKParserExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 310B9072221D596D00DF5993 /* SVGKParserExtension.h */; };
 		310B916A221D596E00DF5993 /* SVGKPointsAndPathsParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 310B9073221D596D00DF5993 /* SVGKPointsAndPathsParser.h */; };
 		310B916B221D596E00DF5993 /* SVGKParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 310B9074221D596D00DF5993 /* SVGKParser.m */; };
@@ -380,6 +379,7 @@
 		310B92BF221D608C00DF5993 /* Attr.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 310B90BF221D596D00DF5993 /* Attr.h */; };
 		310B92C0221D60AC00DF5993 /* CSSRuleList+Mutable.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 310B90BA221D596D00DF5993 /* CSSRuleList+Mutable.h */; };
 		310B92C1221D60AC00DF5993 /* SVGKInlineResource.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 310B913F221D596E00DF5993 /* SVGKInlineResource.h */; };
+		310B92D3221D6BB000DF5993 /* NSCharacterSet+SVGKExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 310B9070221D596D00DF5993 /* NSCharacterSet+SVGKExtensions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -1400,7 +1400,6 @@
 				310B921C221D596E00DF5993 /* SVGUseElement.m in Sources */,
 				310B916D221D596E00DF5993 /* SVGKPointsAndPathsParser.m in Sources */,
 				310B9152221D596E00DF5993 /* CALayerWithClipRender.m in Sources */,
-				310B9168221D596E00DF5993 /* NSCharacterSet+SVGKExtensions.m in Sources */,
 				310B91CC221D596E00DF5993 /* StyleSheetList.m in Sources */,
 				310B91D4221D596E00DF5993 /* Attr.m in Sources */,
 				310B9159221D596E00DF5993 /* SVGKLayer.m in Sources */,
@@ -1415,6 +1414,7 @@
 				310B91C4221D596E00DF5993 /* DOMHelperUtilities.m in Sources */,
 				310B91D3221D596E00DF5993 /* CDATASection.m in Sources */,
 				310B916B221D596E00DF5993 /* SVGKParser.m in Sources */,
+				310B92D3221D6BB000DF5993 /* NSCharacterSet+SVGKExtensions.m in Sources */,
 				310B91F2221D596E00DF5993 /* SVGTextPositioningElement.m in Sources */,
 				310B916F221D596E00DF5993 /* SVGKParseResult.m in Sources */,
 				310B919F221D596E00DF5993 /* SVGGroupElement.m in Sources */,
@@ -1535,10 +1535,11 @@
 					"$(inherited)",
 					/usr/include/libxml2,
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-all_load";
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -1594,9 +1595,10 @@
 					"$(inherited)",
 					/usr/include/libxml2,
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-all_load";
 				SDKROOT = macosx;
 			};
 			name = Release;

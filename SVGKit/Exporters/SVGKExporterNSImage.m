@@ -18,7 +18,7 @@
 
 		SVGKGraphicsBeginImageContextWithOptions( image.size, FALSE, [NSScreen mainScreen].backingScaleFactor);
 		CGContextRef context = SVGKGraphicsGetCurrentContext();
-		
+
 		[image renderToContext:context antiAliased:shouldAntialias curveFlatnessFactor:multiplyFlatness interpolationQuality:interpolationQuality flipYaxis:TRUE];
 		
 		NSImage* result = SVGKGraphicsGetImageFromCurrentImageContext();
