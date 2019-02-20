@@ -795,10 +795,9 @@ static NSMutableDictionary* globalSVGKImageCache;
 	{
 		SVGKitLogInfo(@"[%@] WARNING: no CALayer tree found, creating a new one (will cache it once generated)", [self class] );
 
-		NSDate* startTime = [NSDate date];
 		self.CALayerTree = [self newCALayerTree];
 		
-		SVGKitLogInfo(@"[%@] ...time taken to convert from DOM to fresh CALayers: %2.3f seconds)", [self class], -1.0f * [startTime timeIntervalSinceNow] );		
+		SVGKitLogInfo(@"[%@] ...time taken to convert from DOM to fresh CALayers: %2.3f seconds)", [self class], -1.0f * [[NSDate date] timeIntervalSinceNow] );
 	}
 	else
 		SVGKitLogVerbose(@"[%@] fetching CALayerTree: re-using cached CALayers (FREE))", [self class] );
