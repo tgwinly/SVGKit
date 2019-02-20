@@ -1,0 +1,2 @@
+# SVGKit
+SVGKit without dependencies.
