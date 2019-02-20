@@ -36,8 +36,9 @@
  */
 
 #import "SVGKDefine.h"
-#import "SVGKParser.h" // needed for asynchronous loading method-signature
+//#import "SVGKParser.h" // needed for asynchronous loading method-signature
 
+@class SVGKParser;
 @class SVGDocument;
 @class SVGSVGElement;
 @class SVGKSource;

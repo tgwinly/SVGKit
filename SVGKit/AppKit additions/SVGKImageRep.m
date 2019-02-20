@@ -14,6 +14,7 @@
 #import "SVGKFastImageView.h"
 #import "SVGKImageRep.h"
 #import "SVGKImage+CGContext.h"
+#import "SVGKParser.h"
 #include <tgmath.h>
 
 @interface SVGKImageRep ()

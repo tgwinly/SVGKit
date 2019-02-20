@@ -15,7 +15,6 @@
 		310B9145221D596E00DF5993 /* SVGKSourceNSData.m in Sources */ = {isa = PBXBuildFile; fileRef = 310B904A221D596C00DF5993 /* SVGKSourceNSData.m */; };
 		310B9146221D596E00DF5993 /* SVGKSourceURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 310B904B221D596C00DF5993 /* SVGKSourceURL.m */; };
 		310B9147221D596E00DF5993 /* SVGKSourceLocalFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 310B904C221D596C00DF5993 /* SVGKSourceLocalFile.m */; };
-		310B9148221D596E00DF5993 /* SVGKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 310B904D221D596C00DF5993 /* SVGKit.m */; };
 		310B9149221D596E00DF5993 /* SVGKSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 310B904E221D596C00DF5993 /* SVGKSource.m */; };
 		310B914C221D596E00DF5993 /* SVGKImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 310B9052221D596D00DF5993 /* SVGKImageView.h */; };
 		310B914D221D596E00DF5993 /* SVGKFastImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 310B9053221D596D00DF5993 /* SVGKFastImageView.h */; };
@@ -539,7 +538,6 @@
 		310B904A221D596C00DF5993 /* SVGKSourceNSData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVGKSourceNSData.m; sourceTree = "<group>"; };
 		310B904B221D596C00DF5993 /* SVGKSourceURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVGKSourceURL.m; sourceTree = "<group>"; };
 		310B904C221D596C00DF5993 /* SVGKSourceLocalFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVGKSourceLocalFile.m; sourceTree = "<group>"; };
-		310B904D221D596C00DF5993 /* SVGKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVGKit.m; sourceTree = "<group>"; };
 		310B904E221D596C00DF5993 /* SVGKSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVGKSource.m; sourceTree = "<group>"; };
 		310B9050221D596D00DF5993 /* SVGKFastImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVGKFastImageView.m; sourceTree = "<group>"; };
 		310B9051221D596D00DF5993 /* SVGKLayeredImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVGKLayeredImageView.m; sourceTree = "<group>"; };
@@ -822,7 +820,6 @@
 				310B9134221D596D00DF5993 /* SVGKImage.h */,
 				310B9069221D596D00DF5993 /* SVGKImage.m */,
 				310B9135221D596D00DF5993 /* SVGKit.h */,
-				310B904D221D596C00DF5993 /* SVGKit.m */,
 				310B906A221D596D00DF5993 /* SVGKSource.h */,
 				310B904E221D596C00DF5993 /* SVGKSource.m */,
 				310B904F221D596D00DF5993 /* UIKit additions */,
@@ -1470,7 +1467,6 @@
 				310B9151221D596E00DF5993 /* SVGGradientLayer.m in Sources */,
 				310B91D9221D596E00DF5993 /* CSSPrimitiveValue.m in Sources */,
 				310B9214221D596E00DF5993 /* SVGDocument.m in Sources */,
-				310B9148221D596E00DF5993 /* SVGKit.m in Sources */,
 				310B91D8221D596E00DF5993 /* CSSStyleSheet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
