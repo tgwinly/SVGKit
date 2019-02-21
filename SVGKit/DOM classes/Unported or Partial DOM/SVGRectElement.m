@@ -118,11 +118,15 @@ void CGPathAddRoundedRect (CGMutablePathRef path, CGRect rect, CGFloat radiusX, 
         if( radiusYPixels > CGRectGetHeight(rect) / 2 ) // give RY max value of half rect height
             radiusYPixels = CGRectGetHeight(rect) / 2;
 		
-		CGPathAddRoundedRect(path,
+		if (@available(macOS 10.9, *)) {
+			CGPathAddRoundedRect(path,
 #if !(SVGKIT_UIKIT && __IPHONE_OS_VERSION_MAX_ALLOWED < __IPHONE_7_0)
-							 nil,
+								 nil,
 #endif
-							 rect, radiusXPixels, radiusYPixels);
+								 rect, radiusXPixels, radiusYPixels);
+		} else {
+			CGPathAddRect(path, nil, rect);
+		}
 	}
 	self.pathForShapeInRelativeCoords = path;
 	CGPathRelease(path);
